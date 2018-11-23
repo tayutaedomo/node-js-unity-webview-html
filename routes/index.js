@@ -6,4 +6,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+
+router.get('/MyWebView.html', function(req, res, next) {
+  res.render('my_web_view');
+});
+
+
 module.exports = router;
