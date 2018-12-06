@@ -3,12 +3,15 @@
   <ul>
     <li><a href='unity:hoge'>callback 'hoge'</a></li>
     <li><a href='unity:fuga'>callback 'fuga'</a></li>
+
+    <li><a href='javascript:on_click()'>callback by on_click</a></li>
   </ul>
 
   <form id="form" action="#">
     <input id="message" type="text" value="message">
     <button onclick="on_click()">Send</button>
   </form>
+
   <script>
     function on_click() {
       window.location.href = 'unity:' + document.forms.form.message.value;
