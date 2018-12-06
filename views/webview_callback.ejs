@@ -1,0 +1,16 @@
+<html>
+<body>
+  <form id="form" action="#">
+    <input id="message" type="text" value="message">
+    <button onclick="on_click()">Send</button>
+  </form>
+  <script>
+    function on_click() {
+      var url = 'unity:' + document.forms.form.message.value;
+      console.log(url);
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>
+
